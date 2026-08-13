@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Neon Arena 3D</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="stars"></div>
+
+  <header class="navbar">
+    <div class="logo">NΞON<span>ARENA</span></div>
+
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#game">GAME</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+
+    <button class="play-btn" onclick="startGame()">PLAY NOW</button>
+  </header>
+
+  <main id="home">
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <p class="small-title">WELCOME PLAYER</p>
+
+        <h1>
+          ENTER THE
+          <span>3D FUTURE</span>
+        </h1>
+
+        <p class="description">
+          Experience a futuristic gaming arena with animated
+          3D environments, neon effects and interactive controls.
+        </p>
+
+        <div class="buttons">
+          <button onclick="movePlayer('FORWARD')">
+            ▶️ FORWARD
+          </button>
+
+          <button onclick="movePlayer('BACKWARD')">
+            ◀️ BACKWARD
+          </button>
+        </div>
+
+        <div class="stats">
+          <div>
+            <strong id="players">128</strong>
+            <small>PLAYERS</small>
+          </div>
+
+          <div>
+            <strong id="level">07</strong>
+            <small>LEVEL</small>
+          </div>
+
+          <div>
+            <strong>∞</strong>
+            <small>POWER</small>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="game-world">
+
+        <div class="grid-floor"></div>
+
+        <div class="planet"></div>
+
+        <div class="player">
+          <div class="helmet"></div>
+          <div class="body"></div>
+          <div class="leg left"></div>
+          <div class="leg right"></div>
+        </div>
+
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+
+      </div>
+
+    </section>
+
+    <section id="game" class="game-panel">
+
+      <h2>MISSION CONTROL</h2>
+
+      <div class="control-box">
+
+        <div>
+          <span>STATUS</span>
+          <strong id="status">READY</strong>
+        </div>
+
+        <div>
+          <span>ACTION</span>
+          <strong id="action">NONE</strong>
+        </div>
+
+        <div>
+          <span>POSITION</span>
+          <strong id="position">0</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
