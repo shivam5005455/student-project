@@ -1,0 +1,1 @@
+print(" shivam. jha" *3      )
